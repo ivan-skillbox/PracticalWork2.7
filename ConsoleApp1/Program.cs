@@ -1,10 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography.X509Certificates;
-
-//Console.WriteLine("Hello, World!");
-
-internal class Program
+﻿internal class Program
 {
     private static void Main(string[] args)
     {
