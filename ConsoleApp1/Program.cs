@@ -6,24 +6,8 @@ using System.Security.Cryptography.X509Certificates;
 
 internal class Program
 {
-    private static double GetAverage(params double[] values)
-    {
-        double sum = 0;
-        int count = 0;
-        foreach (double Value in values)
-        {
-            sum = sum + Value;
-            count++;
-        }
-        return sum/count;
-    }
     private static void Main(string[] args)
     {
-        
-        
-        
-
-
         Console.WriteLine("Введите ФИО:");
         string name = Console.ReadLine();
         Console.WriteLine("Введите возраст:");
@@ -42,7 +26,7 @@ internal class Program
         Console.WriteLine(output, name,age,email,programmingScore,mathsScore,phisicsScore);
         
         double sumScore = programmingScore + mathsScore + phisicsScore;
-        double avgScore = GetAverage(programmingScore ,mathsScore ,phisicsScore);
+        double avgScore = sumScore/3;
         Console.WriteLine("Сумма баллов по предметам: {0:0.0}",sumScore);
         Console.WriteLine("Средний балл по предметам: {0:0.0}", avgScore);
         Console.ReadKey();
